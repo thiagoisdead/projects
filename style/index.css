@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Zera o espaçamento padrão de todos os elementos para evitar inconsistências entre navegadores */
+}
+
+.heading {
+    display: flex;
+    width: 40%;
+    font-size: 35px;
+    transition: background-color 1s ease-in-out;
+    color: #00BF00;
+    margin-top: 20px;
+    padding-left: 30px;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: #1E1E1E;
+    cursor: pointer;
+}
+
+li a img {
+    background-color: rgba(219, 216, 227, 0.9);
+    border-radius: 50%;
+}
+
+.heading:hover {
+    background-color: red;
+}
+
+li a:visited {
+    text-decoration: none;
+    color: #dbd8e3;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: auto;
+    align-items: center;
+    width: 80%;
+    grid: 30px;
+    text-align: center;
+}
+
+ul li {
+    display: inline-flex;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #dbd8e3;
+    align-items: center;
+}
+
+.links {
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+ul li img {
+    vertical-align: middle;
+}
+
+body {
+    background-color: #1E1E1E;
+    min-height: 100vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+}
+
+.introduction {
+    font-size: 33px;
+    color: #dbd8e3;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.line {
+    height: 2px;
+    width: 99%;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
