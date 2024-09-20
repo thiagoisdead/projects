@@ -4,3 +4,8 @@ function exibirMensagem() {
 function voltarAoTopo() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
+const chk = document.getElementById('themeChk')
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('light')
+})
