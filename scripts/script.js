@@ -3,7 +3,7 @@ function exibirMensagem() {
 }
 
 function voltarAoTopo() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 const chk = document.getElementById('themeChk');
@@ -11,3 +11,12 @@ const chk = document.getElementById('themeChk');
 chk.addEventListener('change', () => {
     document.body.classList.toggle('light');
 });
+document.addEventListener('DOMContentLoaded', () => {
+    SVGInjector(document.querySelectorAll('.arrowInject'));
+});
+window.addEventListener('scroll', function(){
+    let scroll = document.querySelector('.scrollTop')
+    scroll.classList.toggle('active', window.scrollY > 350)
+})
+
+
