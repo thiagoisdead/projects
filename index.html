@@ -11,64 +11,74 @@
 </head>
 
 <body>
-    <div class="wrapper"></div>
-    <nav class="container appearAnimation">
-        <header class="heading">&lt;/Thiago Navarro&gt;</header>
-        <ul class="menuContainer">
-            <li><a href="https://github.com/thiagoisdead" target="_blank"><img src="imgs/github.svg" width="70px"
-                        height="70px" alt="github-logo" class="github-logo" draggable="false"></a></li>
-            <li class="linkedinLogo"><a href="https://www.linkedin.com/in/thiago-navarro-152a58278/" target="_blank">
-                    <img src="imgs/linkedin.svg" width="60px" height="60px" alt="linkedin-logo" class="linkedin-logo"
-                        draggable="false"></a></li>
-            <li class="links projeto">Projetos</li>
-            <li class="links"><a href="html/cv.html">Curriculo</a></li>
-            <div>
-                <input type="checkbox" class="checkbox" id="themeChk">
-                <label for="themeChk" class="label">
-                    <div class="ball"></div>
-                </label>
+    <div class="wrapper" id="Page">
+        <nav class="container appearAnimation">
+            <header class="heading">&lt;/Thiago Navarro&gt;</header>
+            <ul class="menuContainer">
+                <li><a href="https://github.com/thiagoisdead" target="_blank"><img src="imgs/github.svg" width="70px"
+                            height="70px" alt="github-logo" class="github-logo" draggable="false"></a></li>
+                <li class="linkedinLogo"><a href="https://www.linkedin.com/in/thiago-navarro-152a58278/"
+                        target="_blank">
+                        <img src="imgs/linkedin.svg" width="60px" height="60px" alt="linkedin-logo"
+                            class="linkedin-logo" draggable="false"></a></li>
+                <li class="links projeto">Projetos</li>
+                <li class="links"><a href="html/cv.html">Curriculo</a></li>
+                <div>
+                    <input type="checkbox" class="checkbox" id="themeChk">
+                    <label for="themeChk" class="label">
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="line"></div>
+
+        <main class="landing-content appearAnimation">
+            <section class="introduction">
+                <p>
+                    Olá! Sou um desenvolvedor há 2 anos com foco em JavaScript e Java! <br> <br>
+                    Aspiro a ser um desenvolvedor FullStack, curso minha graduação em Análise e Desenvolvimento de Sistemas neste sentido,
+                    e
+                    meu Portfólio tem como objetivo atestar meu conhecimento por meio de diversos projetos aplicados ao
+                    mercado, e também projetos pessoais com meus gostos, aproveite!<br><br>
+
+                    Abaixo, um carrossel com meus conhecimentos nas linguagens, frameworks e bibliotecas implementadas
+                    nos projetos!
+                </p>
+            </section>
+            <div class="rightImage">
+                <img src="imgs/omg-rin-hii.jpg" alt="rin tohsaka" class="rin svgInject" draggable="false">
             </div>
-        </ul>
-    </nav>
+        </main>
 
-    <div class="line"></div>
-
-    <nav class="landing-content appearAnimation">
-        <section class="introduction">
-            <p>
-                Olá! Sou um desenvolvedor há 2 anos com foco em JavaScript e Java! <br> <br>
-                Aspiro a ser um desenvolvedor FullStack, curso análise e desenvolvimento de sistemas neste sentido, e
-                meu Portfólio tem como objetivo atestar meu conhecimento por meio de diversos projetos aplicados ao
-                mercado, e também projetos pessoais com meus gostos, aproveite!<br><br>
-                Abaixo, um carrossel com meus conhecimentos, bem como linguagens, frameworks e bibliotecas implementadas
-                nos projetos!
-            </p>
+        <!-- Nova seção para as logos -->
+        <section class="logos">
+            <div class="logos-slide">
+                <img src="imgs/html.svg" alt="html icon" class="svgInject">
+                <img src="imgs/css.svg" alt="css icon" class="svgInject">
+                <img src="imgs/javascript.svg" alt="javascript icon" class="svgInject">
+                <img src="imgs/react js.svg" alt="react.js icon" class="svgInject">
+                <img src="imgs/jquery.svg" alt="jquery icon" class="svgInject">
+                <img src="imgs/java.svg" alt="java icon" class="svgInject">
+                <img src="imgs/spring boot.svg" alt="spring boot icon" class="svgInject">
+                <img src="imgs/git.svg" alt="git icon" class="svgInject">
+                <img src="imgs/sql.svg" alt="sql icon" class="svgInject">
+                <img src="imgs/python.svg" alt="python icon" class="svgInject">
+            </div>
         </section>
-        <div class="rightImage">
-            <img src="imgs/omg-rin-hii.jpg" alt="rin tohsaka" class="rin svgInject" draggable="false">
-        </div>
-    </nav>
+    </div>
+        <article>
+            <button class="scrollTop" onclick="voltarAoTopo()">
+                <img src="imgs/arrow.svg" alt="arrow scroll to top" class="svgInject arrow">
+            </button>
+        </article>
+        <article>
+            <section class="softSkills" id="Page">
+                <p class="itemSoft">HHAHAHAAHA</p>
+            </section>
+        </article>
 
-    <!-- Nova seção para as logos -->
-    <section class="logos">
-        <div class="logos-slide">
-            <img src="imgs/html.svg" alt="html icon" class="svgInject">
-            <img src="imgs/javascript.svg" alt="javascript icon" class="svgInject">
-            <img src="imgs/java.svg" alt="java icon" class="svgInject">
-            <img src="imgs/react js.svg" alt="react.js icon" class="svgInject">
-            <img src="imgs/sql.svg" alt="sql icon" class="svgInject">
-            <img src="imgs/jquery.svg" alt="jquery icon" class="svgInject">
-            <img src="imgs/css.svg" alt="css icon" class="svgInject">
-            <img src="imgs/python.svg" alt="python icon" class="svgInject">
-            <img src="imgs/spring boot.svg" alt="spring boot icon" class="svgInject">
-        </div>
-    </section>
-
-    <article>
-        <button class="scrollTop" onclick="voltarAoTopo()">
-            <img src="imgs/arrow.svg" alt="arrow scroll to top" class="svgInject arrow">
-        </button>
-    </article>
 </body>
 
 </html>
