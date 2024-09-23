@@ -47,6 +47,12 @@ ul {
     background-color: transparent;
     overflow: hidden;
 }
+.colorTitle {
+    color:  #00BF00;
+}
+.colorTitle2 {
+    color:  #FF4040;
+}
 
 body.light {
     background-color: #fafafa;
@@ -384,6 +390,7 @@ ul li img {
     text-align: center; /* Centraliza o texto no meio da caixa */ 
     height: 100vh; /* O container terá a altura total da tela */
     margin: auto;
+    position: relative;
 }
 .softGridsLeft, .softGridsRight {
     display: grid;
@@ -391,18 +398,21 @@ ul li img {
     gap: 40px; 
     float: left;
     overflow: hidden;
-    padding: 20px;
-    grid-template-columns: repeat(2, 1fr); /* 4 colunas de igual largura */
+    padding: 30px;
+    grid-template-columns: repeat(2, 1fr); 
+    margin-top: 100px;
 }
 .softItemLeft, .softItemRight {
     border-radius: 10px;
     background-color: #fafafa;
     color: #1E1E1E;
-    font-size: 20px;
+    font-size: 23px;
     border: 3px solid #fafafa;
     width: 300px;
     height: 150px;
     transition: transform 0.3s ease-in-out;
+    position: relative;
+    border: 3px solid #1E1E1E;
 }
 
 .softItemLeft {
@@ -416,7 +426,33 @@ ul li img {
     behavior: smooth;
 }
 
-body.light .softItemLeft, .softItemRight {
+body.light .softItemLeft {
     border: 3px solid #1E1E1E;
-        box-shadow: 5px 5px 5px #1E1E1E;
+    box-shadow: 5px 5px 5px #1E1E1E;
 }
+body.light .softItemRight {
+    border: 3px solid #1E1E1E;
+    box-shadow: 5px 5px 5px #1E1E1E;
+}
+.titleLeft, .titleRight {
+    position: absolute;
+    top: 20px; /* Ajuste a altura dos títulos para estar visível */
+    font-size: 30px;
+    color: #000; /* Altere para uma cor que contraste com o fundo */
+    text-align: center;
+    width: max-content;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fafafa;
+    border: 2px solid #1E1E1E;
+    box-shadow: 5px 5px 5px #1E1E1E;
+  }
+  .titleLeft {
+    left: 25%; /* Centralizado no softGridsLeft */
+    transform: translateX(-66%);
+  }
+  .titleRight {
+    right: 25%; /* Centralizado no softGridsRight */
+    transform: translateX(66%);
+  }
