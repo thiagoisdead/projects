@@ -7,12 +7,11 @@
     <title>Portfólio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/index.css">
-    <script src="https://kit.fontawesome.com/998c60ef77.js" defer></script>
 </head>
 
 <body>
-    <div class="wrapper" id="Page">
-        <nav class="container appearAnimation">
+    <div class="wrapper">
+        <nav class="container appearFromLeftAnimation">
             <header class="heading">&lt;/Thiago Navarro&gt;</header>
             <ul class="menuContainer">
                 <li><a href="https://github.com/thiagoisdead" target="_blank"><img src="imgs/github.svg" width="70px"
@@ -34,11 +33,12 @@
 
         <div class="line"></div>
 
-        <main class="landing-content appearAnimation">
+        <main class="landing-content appearFromLeftAnimation">
             <section class="introduction">
                 <p>
                     Olá! Sou um desenvolvedor há 2 anos com foco em JavaScript e Java! <br> <br>
-                    Aspiro a ser um desenvolvedor FullStack, curso minha graduação em Análise e Desenvolvimento de Sistemas neste sentido,
+                    Aspiro a ser um desenvolvedor FullStack, curso minha graduação em Análise e Desenvolvimento de
+                    Sistemas neste sentido,
                     e
                     meu Portfólio tem como objetivo atestar meu conhecimento por meio de diversos projetos aplicados ao
                     mercado, e também projetos pessoais com meus gostos, aproveite!<br><br>
@@ -51,8 +51,6 @@
                 <img src="imgs/omg-rin-hii.jpg" alt="rin tohsaka" class="rin svgInject" draggable="false">
             </div>
         </main>
-
-        <!-- Nova seção para as logos -->
         <section class="logos">
             <div class="logos-slide">
                 <img src="imgs/html.svg" alt="html icon" class="svgInject">
@@ -68,19 +66,25 @@
             </div>
         </section>
     </div>
-        <article>
-            <button class="scrollTop" onclick="voltarAoTopo()">
-                <img src="imgs/arrow.svg" alt="arrow scroll to top" class="svgInject arrow">
-            </button>
-        </article>
-        <article>
-            <section class="softSkills" id="Page">
-                <p class="itemSoft">HHAHAHAAHA</p>
-            </section>
-        </article>
+    <article>
+        <button class="scrollTop" onclick="voltarAoTopo()">
+            <img src="imgs/arrow.svg" alt="arrow scroll to top" class="svgInject arrow">
+        </button>
+    </article>
+    <article class="softSkills" id="Page">
+        <section class="softGrids appearFromRightAnimation">
+            <div class="softItem"><strong>Trabalho em Grupo</strong><br><br>Capacidade de trabalhar com grandes grupos de trabalho</div>
+            <div class="softItem">hahah</div>
+            <div class="softItem">hahah</div>
+            <div class="softItem">hahah</div>
+            <div class="softItem">hahah</div>
+            <div class="softItem">hahah</div>
+        </section>
+    </article>
 
 </body>
 
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/svg-injector/1.1.3/svg-injector.min.js"></script>
+<script src="https://kit.fontawesome.com/998c60ef77.js" defer></script>
 <script src="scripts/script.js"></script>
