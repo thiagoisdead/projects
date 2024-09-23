@@ -258,6 +258,9 @@ ul li img {
 .appearFromRightAnimation {
     animation: slideInFromRight 1s ease-in-out forwards;
 }
+.appearFromUpAnimation {
+    animation: slideInFromUp 2s ease-in-out forwards;
+}
 
 
 .scrollTop.active {
@@ -296,6 +299,17 @@ ul li img {
         opacity: 1;
     }
 }
+@keyframes slideInFromUp {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 @keyframes slide {
     from {
@@ -306,6 +320,20 @@ ul li img {
         transform: translateX(-100%);
     }
 
+}
+@keyframes tremedinha {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.tremedinha {
+    animation: tremedinha 2s infinite;
+}
+.tremedinha:hover {
+    animation-play-state: paused;
 }
 
 .logos-slide {
@@ -351,32 +379,44 @@ ul li img {
 }
 .softSkills {
     display: flex;
-    justify-content: left; /* Centraliza horizontalmente */
+    justify-content: space-between; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     text-align: center; /* Centraliza o texto no meio da caixa */ 
     height: 100vh; /* O container terá a altura total da tela */
     margin: auto;
 }
-.softGrids {
+.softGridsLeft, .softGridsRight {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 40px; 
     float: left;
     overflow: hidden;
-    padding-right: 20px;
+    padding: 20px;
     grid-template-columns: repeat(2, 1fr); /* 4 colunas de igual largura */
 }
-.softItem {
+.softItemLeft, .softItemRight {
     border-radius: 10px;
     background-color: #fafafa;
     color: #1E1E1E;
     font-size: 20px;
     border: 3px solid #fafafa;
-    margin-left: 60px;
     width: 300px;
     height: 150px;
+    transition: transform 0.3s ease-in-out;
 }
-body.light .softItem {
+
+.softItemLeft {
+    margin-left: 60px;
+}
+.softItemRight {
+    margin-right: 60px;
+}
+.softItemLeft:hover, .softItemRight:hover {
+    transform: scale(1.1);
+    behavior: smooth;
+}
+
+body.light .softItemLeft, .softItemRight {
     border: 3px solid #1E1E1E;
         box-shadow: 5px 5px 5px #1E1E1E;
 }

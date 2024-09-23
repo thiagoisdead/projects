@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     SVGInjector(document.querySelectorAll('.svgInject'));
 });
 
-function addScrollEventListener() {
+function ArrowScrollUp() {
     window.addEventListener('scroll', function () {
         let scroll = document.querySelector('.scrollTop');
         scroll.classList.toggle('active', window.scrollY > 150); // Valor indica quando vai aparecer a seta pra voltar ao inicio
@@ -47,4 +47,4 @@ function enableSmoothScroll(scrollAmount) {
 
 // Lugar pra chamar funções
 enableSmoothScroll(1100); // O quanto desce o scroll do mouse
-addScrollEventListener(); // Ativa a seta pra cima
+ArrowScrollUp(); // Ativa a seta pra cima
